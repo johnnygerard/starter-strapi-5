@@ -1,8 +1,27 @@
 {
-  "name": "starter-strapi-5",
-  "version": "0.1.0",
-  "private": true,
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.33.3",
+    "@strapi/plugin-users-permissions": "5.33.3",
+    "@strapi/strapi": "5.33.3",
+    "better-sqlite3": "12.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
   "description": "A Strapi application",
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
+  "name": "starter-strapi-5",
+  "private": true,
   "scripts": {
     "build": "strapi build",
     "console": "strapi console",
@@ -14,28 +33,9 @@
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
-  "dependencies": {
-    "@strapi/plugin-cloud": "5.33.3",
-    "@strapi/plugin-users-permissions": "5.33.3",
-    "@strapi/strapi": "5.33.3",
-    "better-sqlite3": "12.4.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
-  },
-  "engines": {
-    "node": ">=20.0.0 <=24.x.x",
-    "npm": ">=6.0.0"
-  },
   "strapi": {
-    "uuid": "8a465727-c5fd-4f35-9469-31dfabc83926",
-    "installId": "cf056de41380bc366971ab3ba87a0ad596201fbc0a1a3da3a3c254fa8d2f9023"
-  }
+    "installId": "cf056de41380bc366971ab3ba87a0ad596201fbc0a1a3da3a3c254fa8d2f9023",
+    "uuid": "8a465727-c5fd-4f35-9469-31dfabc83926"
+  },
+  "version": "0.1.0"
 }
