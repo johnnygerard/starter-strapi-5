@@ -50,6 +50,7 @@
   },
   "strapi": {
     "installId": "cf056de41380bc366971ab3ba87a0ad596201fbc0a1a3da3a3c254fa8d2f9023",
+    "telemetryDisabled": true,
     "uuid": "8a465727-c5fd-4f35-9469-31dfabc83926"
   },
   "version": "0.1.0"
