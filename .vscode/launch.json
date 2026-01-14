@@ -19,7 +19,7 @@
         "--user-data-dir=${userHome}/.config/google-chrome-vscode"
       ],
       "type": "chrome",
-      "url": "http://localhost:1338",
+      "url": "http://localhost:1337",
       "webRoot": "${workspaceFolder}"
     }
   ],

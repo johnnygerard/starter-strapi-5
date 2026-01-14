@@ -43,7 +43,7 @@
     "develop": "strapi develop",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "start": "PORT=1338 strapi start",
+    "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
