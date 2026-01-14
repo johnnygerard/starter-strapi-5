@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Launch Chrome",
+      "preLaunchTask": "npm: dev",
+      "request": "launch",
+      "runtimeArgs": [
+        "--user-data-dir=${userHome}/.config/google-chrome-vscode"
+      ],
+      "type": "chrome",
+      "url": "http://localhost:1337",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome (Prod)",
+      "preLaunchTask": "npm: start",
+      "request": "launch",
+      "runtimeArgs": [
+        "--user-data-dir=${userHome}/.config/google-chrome-vscode"
+      ],
+      "type": "chrome",
+      "url": "http://localhost:1337",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "version": "0.2.0"
+}
