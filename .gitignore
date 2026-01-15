@@ -13,3 +13,6 @@
 /.strapi/
 /dist/
 /types/generated/
+
+# Initial setup (see README.md for details)
+/strapi-skeleton/
