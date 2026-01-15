@@ -15,10 +15,16 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 
 ## Initial Setup
 
-To generate new secrets for the `.env` file and initial config values for the `strapi` field in `package.json`, you can run the command below. This will quickly scaffold a new Strapi project ignored by Git and with the same options as this starter.
+To regenerate the `.env` file and initial config values for the `strapi` field in `package.json`, you can run the command below. This will quickly scaffold a new Strapi project ignored by Git and with the same options as this starter.
 
 ```bash
-npx create-strapi-app@latest strapi-skeleton --skip-cloud --dbclient sqlite --no-example --typescript --no-install --no-git-init
+# The `echo` command will accept the default value for the first prompt (anonymous A/B testing: no)
+echo | npx create-strapi-app@latest strapi-skeleton --skip-cloud --dbclient sqlite --dbfile .tmp/data.db --no-example --typescript --no-install --no-git-init
+cp strapi-skeleton/.env .env
+# Manual steps:
+# - Copy the `strapi` field values from `strapi-skeleton/package.json` to this repo's `package.json`
+# - Remove the temporary folder: `git clean -fx strapi-skeleton`
+# - Update environment variables as needed.
 ```
 
 ## How to Update
